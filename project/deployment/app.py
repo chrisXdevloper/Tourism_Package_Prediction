@@ -29,7 +29,7 @@ NumberOfTrips = st.slider("Number of Trips", 1, 20, 3)
 Passport = st.selectbox("Has Passport?", ["Yes", "No"])
 PitchSatisfactionScore = st.slider("Pitch Satisfaction Score", 1, 5, 3)
 OwnCar = st.selectbox("Owns a Car?", ["Yes", "No"])
-NumberOfChildrenVisited = st.slider("Number of Children Visited", 0, 5, 1)
+NumberOfChildrenVisiting = st.slider("Number of Children Visited", 0, 5, 1)
 Designation = st.selectbox("Designation", ["Executive", "Manager", "AVP", "VP", "Sr. Manager"])
 MonthlyIncome = st.number_input("Monthly Income", min_value=1000.0, value=30000.0)
 
@@ -52,7 +52,7 @@ input_data = pd.DataFrame([{
     'Passport': 1 if Passport == "Yes" else 0,
     'PitchSatisfactionScore': PitchSatisfactionScore,
     'OwnCar': 1 if OwnCar == "Yes" else 0,
-    'NumberOfChildrenVisited': NumberOfChildrenVisited,
+    'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
     'Designation': Designation,
     'MonthlyIncome': MonthlyIncome
 }])
